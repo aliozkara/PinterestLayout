@@ -19,8 +19,11 @@
 
 -(void)initView{
     
-    PinterestLayout *layout = (PinterestLayout *)self.collectionView.collectionViewLayout;
-    layout.delegate = self;
+    PinterestLayout *ly = [[PinterestLayout alloc] init];
+    self.collectionView.collectionViewLayout = ly;
+    ly.delegate = self;
+    
+    
 }
 
 #pragma mark - UICollectionViewDelegate
@@ -40,7 +43,7 @@
 
 #pragma mark - PinterestLayoutDelegate
 
--(NSInteger)cellPadding:(UICollectionView *)padding {
+-(NSInteger)cellPadding:(UICollectionView *)padding{
     return 6;
 }
 
@@ -49,7 +52,7 @@
 }
 
 -(CGFloat)collectionView:(UICollectionView *)collectionView heightForPhotoAtIndexPath:(NSIndexPath *)indexPath{
-    return 100.0f *RAND( 1, 5);
+    return 100.0f * RAND( 1, 5);
 }
 
 

@@ -21,7 +21,7 @@ How to Use
 
 Add ```<PinterestLayoutDelegate>``` to your Controller and init
 
-  ``` objc
+  ``` 
     PinterestLayout *cl = [[PinterestLayout alloc] init];
     yourCollectionView.collectionViewLayout = cl;
     cl.delegate = self;
@@ -29,7 +29,7 @@ Add ```<PinterestLayoutDelegate>``` to your Controller and init
 
 Call the override methods
 
-  ``` objc
+  ``` 
     -(NSInteger)cellPadding:(UICollectionView *)padding{
         return 6;
     }

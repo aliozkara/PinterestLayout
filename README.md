@@ -1,5 +1,6 @@
 # PinterestLayout
 
+IOS Custom UICollectionViewLayout like Pinterest Edit
 
 
 ScreenShots

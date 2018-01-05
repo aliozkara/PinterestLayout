@@ -1,6 +1,5 @@
 //
 //  StaggeredLayout.m
-//  Doktorsitesi
 //
 //  Created by alican özkara on 03/01/2018.
 //  Copyright © 2018 ali can özkara. All rights reserved.
